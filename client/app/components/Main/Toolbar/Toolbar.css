@@ -1,0 +1,69 @@
+#toolbarContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #232526, #414345); /* Elegant gradient */
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#toolbarContainer h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  animation: fadeInSlide 0.6s ease-in-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toolbar-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar-buttons button {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toolbar-buttons button:hover {
+  background-color: #6dd5ed;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.algorithm-select {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Add bottom padding to page content so it's not hidden under toolbar */
+#bodyContainer {
+  padding-bottom: 80px; /* or adjust depending on toolbar height */
+}

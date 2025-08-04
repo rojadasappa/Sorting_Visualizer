@@ -1,0 +1,18 @@
+#bodyContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.arrayElement {
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.arrayElement:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
